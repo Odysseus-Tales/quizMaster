@@ -354,8 +354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ec3ee4e634d7443a8896af5aeb0671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToCompleteQuestion: 30
-  timeToShowCorrectAnswer: 10
+  timeToCompleteQuestion: 20
+  timeToShowCorrectAnswer: 5
   loadNextQuestion: 0
   isAnsweringQuestion: 0
   fillFraction: 0
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
-  m_FillClockwise: 1
+  m_FillClockwise: 0
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
@@ -551,6 +551,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382123610}
   m_CullTransparentMesh: 1
+--- !u!1 &494770570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6576205976410496903, guid: 14fd0e00924b2104a99dd65f43c87781, type: 3}
+  m_PrefabInstance: {fileID: 273679044}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,9 +1077,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 382123611}
   - {fileID: 603171256}
   - {fileID: 663486683}
-  - {fileID: 382123611}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1095,9 +1100,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionText: {fileID: 603171257}
-  question: {fileID: 11400000, guid: 552b8e8440acf7045833fe219a36abc7, type: 2}
+  currentQuestion: {fileID: 0}
+  questions:
+  - {fileID: 11400000, guid: 552b8e8440acf7045833fe219a36abc7, type: 2}
+  - {fileID: 11400000, guid: 2b0825b9e22494546972bb8115c48091, type: 2}
+  - {fileID: 11400000, guid: e8fcdd64ac835734e9bb10e647cbf237, type: 2}
+  - {fileID: 11400000, guid: a44821a24676089458a9bcfcb5702045, type: 2}
+  - {fileID: 11400000, guid: d2fb57fa5797bbf40abd87051a8b5f27, type: 2}
+  answerButtons:
+  - {fileID: 1273013512}
+  - {fileID: 494770570}
+  - {fileID: 1244716540}
+  - {fileID: 2003959380}
   defaultAnswerSprite: {fileID: 21300000, guid: ddfee2a1d8c190e41821afe4adf24e06, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: 71c0abd73d2a54a46be68ff41b044519, type: 3}
+  timerImage: {fileID: 382123612}
 --- !u!1 &1241030697
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1190,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241030697}
   m_CullTransparentMesh: 1
+--- !u!1 &1244716540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6576205976410496903, guid: 14fd0e00924b2104a99dd65f43c87781, type: 3}
+  m_PrefabInstance: {fileID: 1245183711}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1245183711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1306,6 +1328,11 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3578457409074157015, guid: 14fd0e00924b2104a99dd65f43c87781, type: 3}
   m_PrefabInstance: {fileID: 1245183711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1273013512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6576205976410496903, guid: 14fd0e00924b2104a99dd65f43c87781, type: 3}
+  m_PrefabInstance: {fileID: 3785711964255593061}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1296179371
 GameObject:
@@ -1619,6 +1646,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933998754}
   m_CullTransparentMesh: 1
+--- !u!1 &2003959380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6576205976410496903, guid: 14fd0e00924b2104a99dd65f43c87781, type: 3}
+  m_PrefabInstance: {fileID: 1470933734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3785711964255593061
 PrefabInstance:
   m_ObjectHideFlags: 0
