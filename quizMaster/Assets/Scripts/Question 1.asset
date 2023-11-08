@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 1
   m_EditorClassIdentifier: 
   question: what is the gen 2 professor name?
+  answers:
+  - Birch
+  - Elm
+  - Rowan
+  - Juniper
+  correctAnswerIndex: 1

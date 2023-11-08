@@ -15,3 +15,9 @@ MonoBehaviour:
   question: 'which game introduced tag team pokemon battles
 
 '
+  answers:
+  - Soul Silver
+  - White
+  - Emerald
+  - Yellow
+  correctAnswerIndex: 2

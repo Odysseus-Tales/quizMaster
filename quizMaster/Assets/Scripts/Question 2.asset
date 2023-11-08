@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 2
   m_EditorClassIdentifier: 
   question: which is ghost type immune to?
+  answers:
+  - Psychic
+  - Rock
+  - Normal
+  - Dark
+  correctAnswerIndex: 0
